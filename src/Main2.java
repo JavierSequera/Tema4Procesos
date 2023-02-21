@@ -35,8 +35,8 @@ public class Main2 {
 
             while (s.hasNextLine() && !encontrado) {
                 linea = s.nextLine();
-                CalculoHash.compararArrayBytes(linea.getBytes(), resumen.getBytes());
                 if (linea.equals(resumen)){
+                    CalculoHash.compararArrayBytes(linea.getBytes(), resumen.getBytes());
                     encontrado = true;
                 }
             }
